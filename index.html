@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <title>3.4 Assignment Personal Branding 101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+ 
+   <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/SKjfaOX.png"/>
+                </head>
+                <body>
+                
+                <div class="header">
+            
+                  <h2>First Draft of Framework Designs</h2>
+                  <p id="demo"></p>
+                  <div class="card">
+                        <p><button  onclick="typeWriter()">About this</button></p>
+                      </div>
+                  
+
+
+
+
+                  <div class="progress">
+                    <div class="progressbar" id="myBar"></div>
+                  </div>  
+                </div>
+                <div class="info">
+                <div class="timeline">
+                        <div class="container left">
+                          <div class="content">
+                            <h2>2018-Present</h2>
+                            <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <h2>Front Side</h2>
+                                      </div>
+                                      <div class="flip-box-back">
+                                        <h2>Back Side</h2>
+                                      </div>
+                                    </div>
+                                  </div>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                          </div>
+                        </div>
+                        <div class="container right">
+                          <div class="content">
+                            <h2>2017</h2>
+                            <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <h2>Front Side</h2>
+                                      </div>
+                                      <div class="flip-box-back">
+                                        <h2>Back Side</h2>
+                                      </div>
+                                    </div>
+                                  </div>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                          </div>
+                        </div>
+                        <div class="container left">
+                          <div class="content">
+                            <h2>2016</h2>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                          </div>
+                        </div>
+                        <div class="container right">
+                          <div class="content">
+                            <h2>2015</h2>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                          </div>
+                        </div>
+                        <div class="container left">
+                          <div class="content">
+                            <h2>2007</h2>
+                            <p>Facebook.</p>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                          </div>
+                        </div>
+                        <div class="container right">
+                          <div class="content">
+                            <h2>2006</h2>
+                            <p>Myspace.</p>
+                            <p>LiveJournal.</p>
+                            <p>Xanga.</p>
+                            <img src="https://www.cbimg2.com/cb3/layouts/02/997b.jpg" style="width:150px;">
+
+                            <p id="demo"></p>
+                            <div class="card">
+                                    <p id="description"></p>
+                                  <p><button  onclick="typeDec()">Description</button></p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <!-- <div class="flip-box">
+                            <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                                <h2>Front Side</h2>
+                              </div>
+                              <div class="flip-box-back">
+                                <h2>Back Side</h2>
+                              </div>
+                            </div>
+                          </div>
+                          <hr/>
+                          <div class="flip-box">
+                                <div class="flip-box-inner">
+                                  <div class="flip-box-front">
+                                    <h2>Front Side1</h2>
+                                  </div>
+                                  <div class="flip-box-back">
+                                    <h2>Back Side1</h2>
+                                  </div>
+                                </div>
+                              </div> -->
+                <script>
+                // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+                
+                function myFunction() {
+                  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                  var scrolled = (winScroll / height) * 100;
+                  document.getElementById("myBar").style.width = scrolled + "%";
+                }
+                var i = 0;
+                var k = 0;
+                  var txts = 'oppa oppaha dodee do.';
+                  var txt = 'Here is a description of framework designs of the past and of future design.';
+
+                  var speed = 50;
+                  
+                  function typeWriter() {
+                    if (i < txt.length) {
+                      document.getElementById("demo").innerHTML += txt.charAt(i);
+                      i++;
+                      setTimeout(typeWriter, speed);
+                      console.log(this)
+                    }
+                }
+                    function typeDec() {
+                    if (k < txts.length) {
+                      document.getElementById("description").innerHTML += txts.charAt(k);
+                      k++;
+                      setTimeout(typeDec, speed);
+                      console.log(this)
+                    }
+                    }
+                   
+                 
+                </script>
+ 
+  </body>
+</html>
