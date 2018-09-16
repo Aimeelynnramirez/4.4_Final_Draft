@@ -31,29 +31,17 @@ body {
     background: #4acaa8;
     text-align: center;
     cursor: pointer;
-    width: 100%;
     font-size: 18px;
-    border-radius: 15%;
+ 
+    width: 50%;
 
   }
   
   .card button:hover {
     opacity: 0.7;
-    border-radius: 15%;
 
   }
-  button {
-    border: none;
-    border-radius: 15%;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background: #4acaa8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
+ 
   
 .header {
     position: fixed;
