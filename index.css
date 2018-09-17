@@ -6,6 +6,9 @@ a {
   color:white;
   text-decoration: none;
 }
+img {
+  max-width:200px;
+}
 body {
     margin: auto;
     background-color:#ccc;
