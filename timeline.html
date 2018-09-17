@@ -68,11 +68,24 @@
     <div class="timeline" title="This is a timeline for viewing the years of change">
       <div class="container left">
         <div class="content">
-          <h2>2006-present</h2>
-          <img src="images/pinterest.jpg" style="width:100px;">
+            <h2>2007</h2>
+            <hr/>&#10086;<hr/>
+          <img src="images/tumblr.png" style="width:100px;">
 
-          <p> Tumblr and Pinterest and Wix etc. (or micro blogging)</p>
-
+          <p> Tumblr</p>
+          <div class="card">
+              <p id="descriptionT"></p>
+            </div>
+            <button style="color:white; background-color: #4acaa8; border-radius: 8px;" onclick="typeT()">&#10086;</button>
+            <h2>2006</h2>
+            <hr/>&#10086;<hr/>
+            <img src="images/pinterest.jpg" style="width:100px;">
+          <p> Pinterest</p>
+          <div class="card">
+              <p id="descriptionP"></p>
+            </div>
+            <button style="color:white; background-color: #4acaa8; border-radius: 8px;" onclick="typeP()">&#10086;</button>
+  
         </div>
       </div>
       <div class="container right">
@@ -82,7 +95,11 @@
 
           <p>Facebook </p>
           <img src="https://i.imgur.com/luyfoSG.jpg" style="width:100px;">
-
+          <div class="card">
+              <p id="descriptionF"></p>
+            </div>
+            <button style="color:white; background-color: #4acaa8; border-radius: 8px;" onclick="typeF()">&#10086;</button>
+  
         </div>
       </div>
       <div class="container left">
@@ -93,11 +110,27 @@
           <p>Myspace.com</p>
           <img src="https://i.imgur.com/ejKxKZD.png" style="width:100px;">
 
+          <div class="card">
+              <p id="descriptionM"></p>
+            </div>
+            <button style="color:white; background-color: #4acaa8; border-radius: 8px;" onclick="typeM()">&#10086;</button>
+  
+
           <p>Createblog.com</p>
           <img src="https://i.imgur.com/UO1Oof0.png" style="width:100px;">
+          <div class="card">
+              <p id="descriptionC"></p>
+            </div>
+            <button style="color:white; background-color: #4acaa8; border-radius: 8px;" onclick="typeC()">&#10086;</button>
+  
 
           <p>Wordpress</p>
           <img src="https://i.imgur.com/VjtYSpe.png" style="width:100px;">
+          <div class="card">
+              <p id="descriptionW"></p>
+            </div>
+            <button style="color:white; background-color: #4acaa8; border-radius: 8px;" onclick="typeW()">&#10086;</button>
+  
 
         </div>
       </div>
@@ -108,7 +141,12 @@
 
           <p> Deviantart</p>
           <img src="https://i.imgur.com/QCaTENv.jpg" style="width:100px;">
-
+          <div class="card">
+              <p id="descriptionD"></p>
+            </div>
+            <button style="color:white; background-color: #4acaa8; border-radius: 8px;" onclick="typeD()">&#10086;</button>
+  
+         
         </div>
       </div>
       <div class="container left">
@@ -161,7 +199,23 @@
       </div>
     </div>
 
+ 
+    <div class="info" style ="background: #fff; width:300px; color:#000; text-align: center;">
+      <h2>Resources:</h2>
+          <hr/>&#10086;<hr/>
+     <button><a link href="https://youtu.be/2Fex0oBCBcE" style ="background: #fff; width:300px; color:#000; text-align: center;">Andrew Bolton</a></button>
+      <br/>
+      <button><a link href="https://towardsdatascience.com/gangogh-creating-art-with-gans-8d087d8f74a1" style ="background: #fff; width:300px; color:#000; text-align: center;">Gangogh Creating Art</a></button>
+      <br/>
+       <button><a link href="https://www.lifewire.com/what-is-microblogging-3486200" style ="background: #fff; width:300px; color:#000; text-align: center;">What is Microblogging</a></button>
+      <br/>
+      <button> <a link href="https://neilpatel.com/blog/3-blogging-trends-get-jump-2018/" style ="background: #fff; width:300px; color:#000; text-align: center;">3 Blogging Trends 2018</a></button>
+      <br/>
+      <button> <a link href="https://www.webdesignerdepot.com/2011/03/a-brief-history-of-blogging/" style ="background: #fff; width:300px; color:#000; text-align: center;">Brief History of Blogging</a></button>
+      <br/>
+
   </div>
+</div>
   <!-- <div class="flip-box">
                             <div class="flip-box-inner">
                               <div class="flip-box-front">
@@ -200,12 +254,26 @@
     var j = 0;
     var l = 0;
     var x = 0;
+    var d = 0;
+    var m = 0;
+    var c = 0;
+    var w = 0;
+    var f = 0;
+    var p = 0;
+    var t = 0; 
 
+    var txtT = '- Tumblr debuted in February of 2007 as part blogging tool, part microblogging tool, and part social community.';
+    var txtD = 'DeviantArt is the largest online social community for artists and art enthusiasts, allowing people to connect through the creation and sharing of art.';
+    var txtM = 'Myspace is a social networking website offering an interactive, user-submitted network of friends, personal profiles, blogs, groups, photos, music, and videos. Myspace was the largest social networking site in the world, from 2005 to 2009.';
+    var txtC = ' CreateBlog.com is a social network for web designers, graphic artists and bloggers coming together to provide everyone with the best blogging resources. Here you can find everything from layout designs for Myspace and other popular social networking sites ("socnet") to tutorials for Photoshop and other popular designing tools. CreateBlog.com is run by volunteers who dedicate their time and efforts to support the website.';
+    var txtW = 'WordPress is an online, open source website creation tool written in PHP... most powerful blogging and website content management system in existence today.';
+    var txtF = 'Facebook is a social networking site that makes it easy for you to connect and share with your family and friends online. Originally designed for college students, Facebook was created in 2004 by Mark Zuckerberg while he was enrolled at Harvard University.';
+    var txtP = 'Pinterest is a social network that allows users to visually share, and discover new interests by posting known as pinning on Pinterest images or videos to their own or others boards and browsing what other users have pinned.'
     var txtGo = 'Google was born!';
     var txts = 'This was one of the first commerical blogs to have been created for a community.';
     var txtX = 'Xanga, hosted by Wordpress now has still years of being a blogging to journaling site known for creating layouts and templates for the customizable site.';
 
-    var txtL = 'Livejournal created and founded by creators that had custom layouts to be personalized to each template creation.';
+    var txtL = 'LiveJournal is an online community, a social network, and a place for self-expression. We strive to create an environment where you can connect with others, share your thoughts, and be yourself. Our core values guide us to protect and cultivate that community.';
     var txt = 'Here is a description of framework designs of the past and of future design. This shows the sites who are still up and running to this present age. Currently updated @2018.';
 
     var speed = 50;
@@ -248,6 +316,62 @@
         document.getElementById("descriptionX").innerHTML += txtX.charAt(x);
           x++;
         setTimeout(typeX, speed);
+        console.log(this)
+      }
+    }
+    function typeD() {
+      if (d < txtD.length) {
+        document.getElementById("descriptionD").innerHTML += txtD.charAt(d);
+          d++;
+        setTimeout(typeD, speed);
+        console.log(this)
+      }
+    }
+    function typeM() {
+      if (m < txtM.length) {
+        document.getElementById("descriptionM").innerHTML += txtM.charAt(m);
+          m++;
+        setTimeout(typeM, speed);
+        console.log(this)
+      }
+    }
+    function typeC() {
+      if (c < txtC.length) {
+        document.getElementById("descriptionC").innerHTML += txtC.charAt(c);
+          c++;
+        setTimeout(typeC, speed);
+        console.log(this)
+      }
+    }
+    function typeW() {
+      if (w < txtW.length) {
+        document.getElementById("descriptionW").innerHTML += txtW.charAt(w);
+          w++;
+        setTimeout(typeW, speed);
+        console.log(this)
+      }
+    }
+    function typeF() {
+      if (f < txtF.length) {
+        document.getElementById("descriptionF").innerHTML += txtF.charAt(f);
+          f++;
+        setTimeout(typeF, speed);
+        console.log(this)
+      }
+    }
+    function typeP() {
+      if (p < txtP.length) {
+        document.getElementById("descriptionP").innerHTML += txtP.charAt(p);
+          p++;
+        setTimeout(typeP, speed);
+        console.log(this)
+      }
+    }
+    function typeT() {
+      if (t < txtT.length) {
+        document.getElementById("descriptionT").innerHTML += txtT.charAt(t);
+          t++;
+        setTimeout(typeT, speed);
         console.log(this)
       }
     }
