@@ -1,5 +1,5 @@
 {
-  "name": "3.4_First_Draft",
+  "name": "4.4_First_Draft",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aimeelynnramirez/3.4_First_Draft.git"
+    "url": "git+https://github.com/Aimeelynnramirez/4.4_First_Draft.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aimeelynnramirez/3.4_First_Draft/issues"
+    "url": "https://github.com/Aimeelynnramirez/4.4_First_Draft/issues"
   },
-  "homepage": "https://aimeelynnramirez.github.io/3.4_First_Draft/info.html"
+  "homepage": "https://aimeelynnramirez.github.io/4.4_First_Draft/info.html"
 }
