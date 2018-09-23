@@ -5,4 +5,4 @@ final draft off of the first draft on layout
 
 
 [![Personal Branding](https://i.imgur.com/un1RkpS.png)](http://www.youtube.com/watch?v=DJURsF5o7_o)
-[![Visual Goals](https://i.imgur.com/laqerFr.png)](http://www.youtube.com/watch?v=4bGSIAKGsA)
+
